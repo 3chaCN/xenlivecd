@@ -7,7 +7,7 @@ TODAY=`date +%Y%m%d`
 lb config \
     --mode "debian" \
     -a amd64 \
-    -k "xen-amd64 amd64" \
+    -k "amd64" \
     -d bookworm \
     --apt apt \
     --apt-recommends true \
