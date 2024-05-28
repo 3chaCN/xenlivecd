@@ -9,10 +9,17 @@ else
 	out=$1
 fi
 
+#folder id
+fid=$(uuidgen | sed -n 's/\([az0-9]\)-.*/\1/p')
 
-sed -i 's/{mountpoint}/${out}/g' Dockerfile
+#output dir
+builddir=$out/docker-build.$fid
+mkdir $builddir
+
+#sed -i "s/{mountpoint}/$\{out\}/g" compose.yaml
+#docker compose up
 sudo docker build -t xenlivecd:latest .
-sudo docker run --cap-add=ALL xenlivecd:latest
+sudo docker run --cap-add=ALL --volume=$builddir:/mnt xenlivecd:latest
 
 echo "ISO file written to livecd-xen-debian-${VERSION}-amd64.iso."
 exit

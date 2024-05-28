@@ -3,5 +3,3 @@ FROM debian:12
 COPY build.sh /
 CMD ["/bin/bash", "-c", "/build.sh"]
 
-RUN --mount=type=bind,target={mountpoint}
-
