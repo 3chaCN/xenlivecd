@@ -25,7 +25,7 @@ lb config \
     --mirror-chroot http://ftp.fr.debian.org/debian \
     --mirror-chroot-security http://security.debian.org/ \
     --mirror-binary http://ftp.fr.debian.org/debian \
-    --archive-areas "main contrib non-free" \
+    --archive-areas "main contrib non-free non-free-firmware" \
     --checksums none \
     --initramfs live-boot \
     --iso-application "Xen Live build $TODAY" \
