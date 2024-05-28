@@ -16,7 +16,7 @@ lb config \
     --firmware-chroot true \
     --debconf-frontend noninteractive \
     --debconf-priority high \
-    --cache true \
+    --cache false \
     --bootloaders "syslinux grub-efi" \
     --linux-packages "linux-image" \
     --binary-image "iso-hybrid" \
