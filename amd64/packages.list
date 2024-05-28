@@ -1,0 +1,1 @@
+squashfs-tools aufs-tools bridge-utils module-assistant build-essential gawk flex libncurses5 debconf-utils debhelper dpkg-dev kernel-package linux-headers-amd64 ethtool lvm2 mdadm dmraid google-chrome ntfsprogs ntfs-3g vim screen vlan vtun ssh
