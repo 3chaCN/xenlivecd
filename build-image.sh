@@ -15,12 +15,11 @@ fid=$(uuidgen | sed -n 's/\([az0-9]\)-.*/\1/p')
 #output dir
 builddir=$out/docker-build.$fid
 mkdir $builddir
-mkdir $builddir/tmp
 
 #sed -i "s/{mountpoint}/$\{out\}/g" compose.yaml
 #docker compose up
 sudo docker build -t xenlivecd:latest .
-sudo docker run --cap-add=ALL --volume=$builddir:/mnt --volume=$builddir/tmp:/tmp xenlivecd:latest
+sudo docker run --cap-add=ALL --volume=$builddir:/usr/src xenlivecd:latest
 
 echo "ISO file written to livecd-xen-debian-${VERSION}-amd64.iso."
 exit
