@@ -1,0 +1,18 @@
+
+ * Add to the guide the steps involved in:
+
+   qcow2, lvm2 snapshots, bond network, vlan, bridge, more snmpd and scripts for cacti 
+   Multiple Network Cards + Multiple Bridges on debian lenny
+   NFS Server, iSCSI & live motion
+
+ Future releases:
+
+ 0.9 Not released. Change the default GUI manager to ConVirt 1.1.
+
+ 1.2 Include a Debian Live Installer?
+
+ * I think will be nice to merge the ideas behind this scripts to the
+ live-helper itself. So in future versions of live-helper, we can create a new
+ Xen Live CD just passing some options to live-helper, instead doing all this
+ work manually.
+

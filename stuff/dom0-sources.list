@@ -1,0 +1,8 @@
+deb http://ftp.caliu.cat/debian/ squeeze main non-free universe contrib
+deb-src http://ftp.caliu.cat/debian/ squeeze main non-free universe contrib
+
+deb http://security.debian.org/ squeeze/updates main contrib universe
+deb-src http://security.debian.org/ squeeze/updates main contrib
+
+deb http://ftp.caliu.cat/debian/ squeeze-updates main contrib non-free
+deb-src http://ftp.caliu.cat/debian/ squeeze-updates main contrib non-free

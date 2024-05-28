@@ -1,0 +1,22 @@
+default 0
+color cyan/blue white/blue
+splashimage /boot/grub/splash.xpm.gz
+timeout 30
+
+# Minimal dom0_mem=1024M for dom0 64bits
+title       HPCKP Training Labs (Xen 4.0 64 bits GNU Debian)
+kernel      /live/xen-4.0-amd64.gz dom0_mem=512M
+module      /live/vmlinuz-2.6.32-5-xen-amd64 boot=live username=livexen hostname=xenalive union=aufs ro console=tty0 max_loop=256
+module      /live/initrd.img-2.6.32-5-xen-amd64
+quiet
+
+# Safe Mode - 64 bits
+title       HPCKP Training Labs (Xen 4.0 64 bits GNU Debian) Safe Mode
+kernel      /live/xen-4.0-amd64.gz dom0_mem=640M nosmp noreboot noirqbalance acpi=off noapic
+module      /live/vmlinuz-2.6.32-5-xen-amd64 boot=live username=livexen hostname=xenalive union=aufs ro console=tty0 max_loop=256 nousb
+module      /live/initrd.img-2.6.32-5-xen-amd64
+quiet
+
+title       Boot from 1st Hard Disk
+rootnoverify (hd0)
+chainloader +1

@@ -1,0 +1,5 @@
+====================================================================
+This is another fork of the Xen Live CD project, 
+but the build stage is handled into a docker container (Debian 12)
+https://github.com/HPCKP/xenlivecd
+====================================================================
