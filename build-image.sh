@@ -1,7 +1,8 @@
 #!/bin/bash
 
 # args : ./build-image <output-path>
-
+# dest for /binary directory : pointing to /mnt in container
+#
 if [ -z $1 ]; then 
 	out="/tmp"
 else

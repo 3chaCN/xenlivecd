@@ -40,7 +40,6 @@ lb config \
 
 # make the tmp directories
 mkdir tmp ; mkdir -p config/chroot_local-includes/tmp ; chmod 1777 config/chroot_local-includes/tmp
- 
 cp packages.list config/package-lists/xen.chroot
 
 #    --interactive shell \
