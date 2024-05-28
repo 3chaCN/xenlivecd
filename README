@@ -24,4 +24,4 @@ xbps-install docker docker-compose docker-buildx
 Instructions to build:
 -------------------------
 sudo docker build -t xenlivecd:latest .
-sudo docker run --cap-add=ALL xenlivecd:latest
+sudo docker run --cap-add=ALL xenlivecd:latest --volume=/mnt/dest:/mnt:rw
