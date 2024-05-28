@@ -3,3 +3,11 @@ This is another fork of the Xen Live CD project,
 but the build stage is handled into a docker container (Debian 12)
 https://github.com/HPCKP/xenlivecd
 ====================================================================
+Require:
+-----------
+docker, docker-compose, docker-buildx
+
+Instructions to build:
+-------------------------
+sudo docker build -t xenlivecd:latest .
+sudo docker run --cap-add=ALL xenlivecd:latest
