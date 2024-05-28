@@ -18,7 +18,7 @@ lb config \
     --debconf-priority high \
     --cache true \
     --bootloaders "syslinux grub-efi" \
-    --linux-packages "linux-image aufs-modules squashfs-modules xen-hypervisor xen-linux-system linux-image-xen-amd64 xen-tools" \
+    --linux-packages "linux-image xen-system-amd64 xen-tools" \
     --binary-image "iso-hybrid" \
     --chroot-filesystem squashfs \
     --mirror-bootstrap http://ftp.fr.debian.org/debian \
@@ -27,7 +27,7 @@ lb config \
     --mirror-binary http://ftp.fr.debian.org/debian \
     --archive-areas "main contrib non-free" \
     --checksums none \
-    --initramfs live-initramfs \
+    --initramfs live-boot \
     --iso-application "Xen Live build $TODAY" \
     --iso-volume "Xen Debian LiveCD v1.0 " \
     --iso-preparer "ben2b <ben2b@proton.me>" \
