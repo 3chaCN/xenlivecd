@@ -15,6 +15,7 @@ fid=$(uuidgen | sed -n 's/\([az0-9]\)-.*/\1/p')
 #output dir
 builddir=$out/docker-build.$fid
 mkdir $builddir
+mkdir $builddir/tmp
 
 #sed -i "s/{mountpoint}/$\{out\}/g" compose.yaml
 #docker compose up
