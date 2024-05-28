@@ -18,7 +18,7 @@ lb config \
     --debconf-priority high \
     --cache true \
     --bootloaders "syslinux grub-efi" \
-    --linux-packages "linux-image xen-system-amd64 xen-tools" \
+    --linux-packages "linux-image" \
     --binary-image "iso-hybrid" \
     --chroot-filesystem squashfs \
     --mirror-bootstrap http://ftp.fr.debian.org/debian \
