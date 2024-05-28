@@ -1,7 +1,7 @@
 # syntax=docker/dockerfile:1-labs
 FROM debian:12
 COPY build.sh /
-ENTRYPOINT ["/bin/bash", "-c", "/build.sh"]
+CMD ["/bin/bash", "-c", "/build.sh"]
 
-RUN --mount=type=bind,target=/mnt
+RUN --mount=type=bind,target={mountpoint}
 
