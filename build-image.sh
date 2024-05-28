@@ -19,7 +19,7 @@ mkdir $builddir
 #sed -i "s/{mountpoint}/$\{out\}/g" compose.yaml
 #docker compose up
 sudo docker build -t xenlivecd:latest .
-sudo docker run --cap-add=ALL --volume=$builddir:/mnt xenlivecd:latest
+sudo docker run --cap-add=ALL --volume=$builddir:/mnt --volume=$builddir/tmp:/tmp xenlivecd:latest
 
 echo "ISO file written to livecd-xen-debian-${VERSION}-amd64.iso."
 exit
