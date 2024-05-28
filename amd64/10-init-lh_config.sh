@@ -35,7 +35,8 @@ lb config \
     --grub-splash "../stuff/splash.xpm.gz" \
     --source false \
     --clean \
-    --verbose 
+    --verbose \
+    --bootappend-live "boot=live components hostname=xen-debian username=xen-live"
 
 # make the tmp directories
 mkdir tmp ; mkdir -p config/chroot_local-includes/tmp ; chmod 1777 config/chroot_local-includes/tmp
