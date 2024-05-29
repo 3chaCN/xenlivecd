@@ -1,7 +1,8 @@
 #! /bin/sh
 
 # mount proc filesystem
-mount -t proc none /proc
+mount -t proc none chroot/proc
+chroot chroot updatedb
 
 # Change the root password to "live":
 sed -i "s/^root::/root:\$1\$XB0iKAYV\$DZM1qDJXQlzDeyszVTipn\/:/" chroot/etc/shadow
@@ -16,4 +17,4 @@ mkdir -p chroot/var/lib/xen/kernels
 
 echo "dummy numdummies=6" >> chroot/etc/modules
 
-chroot chroot updatedb
+
