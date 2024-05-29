@@ -1,0 +1,1 @@
+../arch-common/27-update-chroot.sh
