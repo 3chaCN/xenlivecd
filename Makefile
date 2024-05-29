@@ -33,7 +33,7 @@ iso-amd64:
 	cd amd64 && ./15-copy-some-stuff.sh
 	cd amd64 && ./20-run-lh_build.sh
 	cd amd64 && ./25-copy-grub-menu.sh
-	cd amd64 && chroot chroot ./27-update-chroot.sh
+	cd amd64 && ./27-update-chroot.sh
 	cd amd64 && ./29-update-apt-repositories.sh
 	cd amd64 && ./31-prepare-binary-for-xen.sh
 	cd amd64 && ./35-remake-iso.sh
