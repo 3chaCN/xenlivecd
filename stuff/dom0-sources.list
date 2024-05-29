@@ -1,8 +1,9 @@
-deb http://ftp.caliu.cat/debian/ squeeze main non-free universe contrib
-deb-src http://ftp.caliu.cat/debian/ squeeze main non-free universe contrib
+deb http://ftp.fr.debian.org/debian/ bookworm main non-free-firmware contrib non-free
+deb-src http://ftp.fr.debian.org/debian/ bookworm main non-free-firmware contrib non-free
 
-deb http://security.debian.org/ squeeze/updates main contrib universe
-deb-src http://security.debian.org/ squeeze/updates main contrib
+deb http://ftp.fr.debian.org/debian-security/ bookworm-security main non-free-firmware contrib non-free
+deb-src http://ftp.fr.debian.org/debian-security/ bookworm-security main non-free-firmware contrib non-free
 
-deb http://ftp.caliu.cat/debian/ squeeze-updates main contrib non-free
-deb-src http://ftp.caliu.cat/debian/ squeeze-updates main contrib non-free
+deb http://ftp.fr.debian.org/debian/ bookworm-updates main non-free-firmware contrib non-free
+deb-src http://ftp.fr.debian.org/debian/ bookworm-updates main non-free-firmware contrib non-free
+
