@@ -5,7 +5,7 @@ timeout 30
 
 # Minimal dom0_mem=1024M for dom0 64bits
 title       Xen (Xen 4.17 64 bits GNU Debian)
-kernel      /live/xen-4.17-amd64.gz dom0_mem=512M
+multiboot      /live/xen-4.17-amd64.gz dom0_mem=512M
 module      /live/vmlinuz-6.1.0-21-amd64 boot=live username=livexen hostname=xenalive union=aufs ro console=tty0 max_loop=256
 module      /live/initrd.img-6.1.0-21-amd64
 quiet
