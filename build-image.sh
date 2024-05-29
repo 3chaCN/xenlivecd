@@ -21,5 +21,14 @@ mkdir $builddir
 sudo docker build -t xenlivecd:latest .
 sudo docker run --cap-add=ALL --volume=$builddir:/usr/src xenlivecd:latest
 
-echo "ISO file written to livecd-xen-debian-${VERSION}-amd64.iso."
+isofile=$(ls ${builddir}/xenlivecd/amd64/live-image-amd64.hybrid.iso)
+if [ -z $isofile ]; then
+	echo Creation of iso image has failed. Check the logs in ${builddir}/xenlivecd
+ 	exit -1
+else
+	mv $isofile $builddir/livecd-xen-debian-1.0-amd64.iso
+	echo "ISO file written to ${builddir}/livecd-xen-debian-1.0-amd64.iso"
+fi
 exit
+
+
