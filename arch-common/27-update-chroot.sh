@@ -3,6 +3,7 @@
 # mount proc filesystem
 mount -t proc none chroot/proc
 chroot chroot updatedb
+umount chroot/proc
 
 # Change the root password to "live":
 sed -i "s/^root::/root:\$1\$XB0iKAYV\$DZM1qDJXQlzDeyszVTipn\/:/" chroot/etc/shadow
