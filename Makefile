@@ -33,7 +33,6 @@ iso-amd64:
 	cd amd64 && ./15-copy-some-stuff.sh
 	cd amd64 && ./20-run-lh_build.sh
 	cd amd64 && ./25-copy-grub-menu.sh
-	cd amd64 && ./26-purge-grub-common.sh
 	cd amd64 && ./29-update-apt-repositories.sh
 	cd amd64 && ./30-remake-squashfs.sh
 	cd amd64 && ./31-prepare-binary-for-xen.sh
