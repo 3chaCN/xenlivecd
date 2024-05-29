@@ -8,3 +8,7 @@
 
 # Copy Hypervisor kernel
 cp chroot/boot/xen-*.gz binary/live
+
+# Copy Xen config
+cp -vrf ../stuff/Xen/dom0/etc/xen/* chroot/etc/xen/
+cp -vrf ../stuff/etc/skel/* chroot/etc/skel/
