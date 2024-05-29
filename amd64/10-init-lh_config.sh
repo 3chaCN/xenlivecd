@@ -42,9 +42,6 @@ lb config \
 mkdir tmp ; mkdir -p config/chroot_local-includes/tmp ; chmod 1777 config/chroot_local-includes/tmp
 cp packages.list config/package-lists/xen.list.chroot
 
-# mount proc filesystem
-mount -t proc none /proc
-
 #    --interactive shell \
 #    --bootstrap-flavour minimal|standard
 #    --cache-indices true \
