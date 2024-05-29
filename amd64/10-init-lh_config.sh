@@ -36,7 +36,7 @@ lb config \
     --source false \
     --clean \
     --verbose \
-    --bootappend-live "boot=live components hostname=xen-debian username=xen-live"
+    --bootappend-live "boot=live components hostname=xen-debian username=livexen"
 
 # make the tmp directories
 mkdir tmp ; mkdir -p config/chroot_local-includes/tmp ; chmod 1777 config/chroot_local-includes/tmp
