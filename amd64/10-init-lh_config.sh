@@ -17,7 +17,7 @@ lb config \
     --debconf-frontend noninteractive \
     --debconf-priority high \
     --cache false \
-    --bootloaders "syslinux grub-efi" \
+    --bootloaders "grub-efi" \
     --linux-packages "linux-image" \
     --binary-image "iso-hybrid" \
     --chroot-filesystem squashfs \
