@@ -19,7 +19,7 @@ mkdir $builddir
 #sed -i "s/{mountpoint}/$\{out\}/g" compose.yaml
 #docker compose up
 sudo docker build -t xenlivecd:latest .
-sudo docker run --cap-add=ALL --volume=$builddir:/usr/src xenlivecd:latest
+sudo docker run --cap-add=ALL --privileged --volume=$builddir:/usr/src xenlivecd:latest
 
 isofile=$(ls ${builddir}/xenlivecd/amd64/live-image-amd64.hybrid.iso)
 if [ -z $isofile ]; then
