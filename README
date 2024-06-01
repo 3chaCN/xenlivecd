@@ -24,4 +24,4 @@ Instructions to build:
 -------------------------
 sudo ./build-image /output-dir
 
-TODO : grub boot menu (and commandline)
+TODO : import VM from removable devices (or remote)
