@@ -27,3 +27,4 @@ sudo ./build-image /output-dir
 TODO : import VM from removable devices (or remote)
 add link to pvgrub64 (sudo ln -s /usr/lib/grub-xen/grub-x86_64-xen.bin /usr/lib/xen-4.17/boot/pvgrub64.bi)
 Bridge device configuration ( +  iptables -I FORWARD -m physdev --physdev-is-bridged -j ACCEPT)
+Add iommu to cmdline xen
