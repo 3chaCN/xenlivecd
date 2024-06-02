@@ -25,7 +25,9 @@ Instructions to build:
 sudo ./build-image /output-dir
 
 TODO : import VM from removable devices (or remote)
-Bridge device configuration ( +  iptables -I FORWARD -m physdev --physdev-is-bridged -j ACCEPT) + create bridge device
+Bridge device configuration ( +  iptables -I FORWARD -m physdev --physdev-is-bridged -j ACCEPT) + create bridge device :
+ * nmcli c add type bridge ifname br1 con-name "Brigde 2"
+ * nmcli c mod con-name "Ethernet connection 1"
 WindowMaker menu (add systemctl suspend)
 Bug with livexen home directory
 Add iommu to cmdline xen
