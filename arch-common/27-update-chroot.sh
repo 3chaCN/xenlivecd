@@ -20,6 +20,8 @@ cp ../stuff/menu.hook chroot/usr/share/WindowMaker/menu.hook
 cp ../stuff/rules.v4 chroot/etc/iptables/rules.v4
 cp ../stuff/rules.v6 chroot/etc/iptables/rules.v6
 
+cp -vrf ../stuff/Xen/dom0/etc/skel/.Xresources chroot/home/livexen
+
 echo "dummy numdummies=6" >> chroot/etc/modules
 
 
