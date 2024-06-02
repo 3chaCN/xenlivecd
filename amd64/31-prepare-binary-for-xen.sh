@@ -9,6 +9,9 @@
 # Copy Hypervisor kernel
 cp chroot/boot/xen-*.gz binary/live
 
+# link bootloaders
+chroot chroot ln -s /usr/lib/grub-xen/grub-x86_64-xen.bin /usr/lib/xen-4.17/boot/pvgrub64.bin
+
 # Copy Xen config
 cp -vrf ../stuff/Xen/dom0/etc/xen/* chroot/etc/xen/
 cp -vrf ../stuff/Xen/dom0/etc/skel/* chroot/etc/skel/
