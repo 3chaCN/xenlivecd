@@ -8,7 +8,7 @@ Require:
 docker
 Debian:
 (https://docs.docker.com/engine/install/debian/ for complete documentation)
-apt-get install docker.io containerd.io
+apt-get install docker.io containerd.io uuid-runtime
 
 Fedora:
 (https://docs.docker.com/engine/install/fedora/ for complete doc)
