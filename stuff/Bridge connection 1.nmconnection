@@ -1,0 +1,18 @@
+[connection]
+id=Bridge connection 1
+uuid=777a875c-aca1-476d-a43c-492896ac26e1
+type=bridge
+interface-name=br0
+
+[ethernet]
+
+[bridge]
+
+[ipv4]
+method=auto
+
+[ipv6]
+addr-gen-mode=default
+method=auto
+
+[proxy]
