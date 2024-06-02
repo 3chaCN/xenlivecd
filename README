@@ -31,3 +31,4 @@ Bridge device configuration ( +  iptables -I FORWARD -m physdev --physdev-is-bri
 WindowMaker menu (add systemctl suspend)
 Bug with livexen home directory
 Add iommu to cmdline xen
+Get drivers for windows : https://xenbits.xen.org/pvdrivers/win/ (+ iso burn)
