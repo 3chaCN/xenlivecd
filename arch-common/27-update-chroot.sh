@@ -16,6 +16,10 @@ rm -f chroot/etc/ssh/ssh_host_*
 
 mkdir -p chroot/var/lib/xen/kernels
 
+cp ../stuff/menu.hook chroot/usr/share/WindowMaker/menu.hook
+cp ../stuff/rules.v4 chroot/etc/iptables/rules.v4
+cp ../stuff/rules.v6 chroot/etc/iptables/rules.v6
+
 echo "dummy numdummies=6" >> chroot/etc/modules
 
 
