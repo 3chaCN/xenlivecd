@@ -32,3 +32,5 @@ WindowMaker menu (add systemctl suspend)
 Bug with livexen home directory
 Add iommu to cmdline xen
 Get drivers for windows : https://xenbits.xen.org/pvdrivers/win/ (+ iso burn)
+Net-tools + netcat + supervision scripts (cron) + webui
+sshd config
