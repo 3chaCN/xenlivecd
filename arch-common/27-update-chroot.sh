@@ -21,7 +21,8 @@ cp ../stuff/rules.v4 chroot/etc/iptables/rules.v4
 cp ../stuff/rules.v6 chroot/etc/iptables/rules.v6
 cp ../stuff/*.nmconnection chroot/etc/NetworkManager/system-connections/
 
-cp -vrf ../stuff/Xen/dom0/etc/skel/.Xresources chroot/home/livexen
+chroot chroot useradd -m G sudo livexen
+cp -vrf ../stuff/Xen/dom0/etc/skel/.Xresources chroot/home/livexen/
 
 echo "dummy numdummies=6" >> chroot/etc/modules
 
