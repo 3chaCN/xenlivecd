@@ -26,9 +26,13 @@ sudo ./build-image /output-dir
 
 TODO : import VM from removable devices (or remote)
 Bridge device configuration ( +  iptables -I FORWARD -m physdev --physdev-is-bridged -j ACCEPT) + create bridge device :
- * nmcli c add type bridge ifname br1 con-name "Brigde 2"
- * nmcli c mod con-name "Ethernet connection 1"
-WindowMaker menu (add systemctl suspend)
+
+  nmcli c down "Wired connection 1"
+  ip link set $ifname down
+  nmcli c a ifname br0 type bridge
+  nmcli c a type ethernet ifname eno1 con-name "Ethernet conn 1" master bridge-br0
+  nmcli c up bridge-br0
+
 Bug with livexen home directory
 Add iommu to cmdline xen
 Get drivers for windows : https://xenbits.xen.org/pvdrivers/win/ (+ iso burn)
