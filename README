@@ -22,6 +22,7 @@ xbps-install docker docker-compose docker-buildx
 
 Instructions to build:
 -------------------------
+# an absolute path is required for output dir
 sudo ./build-image /output-dir
 
 TODO : import VM from removable devices (or remote)
