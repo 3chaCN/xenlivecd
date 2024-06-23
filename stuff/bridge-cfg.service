@@ -1,0 +1,11 @@
+[Unit]
+Description=Bridge Configuration
+Wants=network.target NetworkManager.service
+After=network-pre.target dbus.service NetworkManager.service
+
+[Service]
+Type=oneshot
+ExecStart=/etc/NetworkManager/bridge-cfg.sh 
+
+[Install]
+WantedBy=multi-user.target
