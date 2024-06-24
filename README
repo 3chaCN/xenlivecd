@@ -34,7 +34,6 @@ Bridge device configuration ( +  iptables -I FORWARD -m physdev --physdev-is-bri
   nmcli c a type ethernet ifname eno1 con-name "Ethernet conn 1" master bridge-br0
   nmcli c up bridge-br0
 
-Bug with livexen home directory
 Add iommu=(dom0-passthrough|force) to cmdline xen
 Get drivers for windows : https://xenbits.xen.org/pvdrivers/win/ (+ iso burn)
 Net-tools + netcat + supervision scripts (cron) + webui
